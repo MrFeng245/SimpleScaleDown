@@ -25,11 +25,10 @@ def my_nearest_resize(big_img, small_img):
 
 
 if __name__ == '__main__':
-    # open（参数：图片位置）
-    # sys.argv[1]表示第一个命令行参数
-    big_img=Image.open(sys.argv[1])     # 打开图片 
-    small_img=Image.open(sys.argv[2])   # 小图
+    # open（参数：图片路径/名字）
+    big_img=Image.open('big.png')       # 大图
+    small_img=Image.open('small.png')   # 小图
 
     dst_im = my_nearest_resize(big_img, small_img)
-    dst_im.save(sys.argv[3])            # 嵌入小图像素的大图
+    dst_im.save('Ok.png')            # 嵌入小图像素的大图
 
