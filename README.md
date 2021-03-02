@@ -9,3 +9,6 @@ https://www.bilibili.com/video/BV1Lf4y1r7dZ
 假设generate.py、图a、图b都在同一目录下，且图a、图b均为png格式。
 python generate.py 图a 图b 图c
 回车后生成图c。
+
+**注：win10使用时下载PIL库注意点：**  
+python的PIL库只支持python2，所以python3的在控制台输入：pip install pillow,安装成功后找到这个文件夹和PIL文件夹，复制到项目里（目前没找到更好的处理办法）
